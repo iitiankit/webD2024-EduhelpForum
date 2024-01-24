@@ -1,0 +1,329 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Acme&family=IBM+Plex+Serif:wght@500&family=Roboto:wght@300&family=Ubuntu:wght@500&family=Varela+Round&family=Young+Serif&display=swap"
+        rel="stylesheet">
+   
+    <style>
+    
+    </style>
+  </head>
+  <body>
+    
+   
+    <style>
+     @import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;	
+	font-family: Raleway, sans-serif;
+}
+
+body {
+	background: linear-gradient(90deg, #C7C5F4, #776BCC);		
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+}
+
+.screen {		
+	background: linear-gradient(90deg, #5D54A4, #7C78B8);		
+	position: relative;	
+	height: 600px;
+	width: 360px;	
+	box-shadow: 0px 0px 24px #5C5696;
+}
+
+.screen__content {
+	z-index: 1;
+	position: relative;	
+	height: 100%;
+}
+
+.screen__background {		
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 0;
+	-webkit-clip-path: inset(0 0 0 0);
+	clip-path: inset(0 0 0 0);	
+}
+
+.screen__background__shape {
+	transform: rotate(45deg);
+	position: absolute;
+}
+
+.screen__background__shape1 {
+	height: 520px;
+	width: 520px;
+	background: #FFF;	
+	top: -50px;
+	right: 120px;	
+	border-radius: 0 72px 0 0;
+}
+
+.screen__background__shape2 {
+	height: 220px;
+	width: 220px;
+	background: #6C63AC;	
+	top: -172px;
+	right: 0;	
+	border-radius: 32px;
+}
+
+.screen__background__shape3 {
+	height: 540px;
+	width: 190px;
+	background: linear-gradient(270deg, #5D54A4, #6A679E);
+	top: -24px;
+	right: 0;	
+	border-radius: 32px;
+}
+
+.screen__background__shape4 {
+	height: 400px;
+	width: 200px;
+	background: #7E7BB9;	
+	top: 420px;
+	right: 50px;	
+	border-radius: 60px;
+}
+
+.login {
+	width: 320px;
+	padding: 30px;
+	padding-top:50px;
+}
+
+.login__field {
+	padding: 8px 0px;	
+	position: relative;	
+}
+
+.login__icon {
+	position: absolute;
+	top: 30px;
+	color: #7875B5;
+}
+
+.login__input {
+	border: none;
+	border-bottom: 2px solid #D1D1D4;
+	background: none;
+	padding: 8px;
+	padding-left: 24px;
+	font-weight: 700;
+	width: 75%;
+	transition: .2s;
+}
+
+.login__input:active,
+.login__input:focus,
+.login__input:hover {
+	outline: none;
+	border-bottom-color: #6A679E;
+}
+
+.login__submit {
+	background: #fff;
+	font-size: 14px;
+	margin-top: 30px;
+	padding: 16px 20px;
+	border-radius: 26px;
+	border: 1px solid #D4D3E8;
+	text-transform: uppercase;
+	font-weight: 700;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	color: #4C489D;
+	box-shadow: 0px 2px 2px #5C5696;
+	cursor: pointer;
+	transition: .2s;
+}
+
+.login__submit:active,
+.login__submit:focus,
+.login__submit:hover {
+	border-color: #6A679E;
+	outline: none;
+}
+
+.button__icon {
+	font-size: 24px;
+	margin-left: auto;
+	color: #7875B5;
+}
+
+.social-login {	
+	position: absolute;
+	height: 140px;
+	width: 160px;
+	text-align: center;
+	bottom: 0px;
+	right: 0px;
+	color: #fff;
+}
+
+.social-icons {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.social-login__icon {
+	padding: 20px 10px;
+	color: #fff;
+	text-decoration: none;	
+	text-shadow: 0px 0px 8px #7875B5;
+}
+
+.social-login__icon:hover {
+	transform: scale(1.5);	
+}
+#h31{
+	text-align: center;
+	font-size: 25px;
+	color: #5a4bda;
+}
+#h31:hover{
+	color: red;
+	cursor: pointer;
+	font-weight: bold;
+}
+.png{
+	display: flex;
+	align-items: center;
+	justify-content: left;
+	padding: 10px;
+}
+    </style>
+</head>
+<body>
+  <body>
+    <div class="container">
+      <div class="screen">
+        <div class="screen__content">
+			<div class="png">
+				<img style="height: 40px;width: 90px;margin: 10px;" src="untitled4.png" alt="" srcset="">
+				  </div>
+          <form class="login" id="mainform">
+			<h3  id="h31">Create New User</h3><br>
+            <div class="login__field">
+              <i class="login__icon fas fa-user"></i>
+              <input type="text" class="login__input" id="emailinp" placeholder="User name / Email">
+            </div>
+            <div class="login__field">
+              <i class="login__icon fas fa-lock"></i>
+              <input type="password" class="login__input" id="passwordinp" placeholder="Password">
+            </div>
+            <div class="login__field">
+              <i class="login__icon fas fa-user"></i>
+              <input type="text" class="login__input" id="fnameinp" placeholder="First name">
+            </div>
+            <div class="login__field">
+              <i class="login__icon fas fa-lock"></i>
+              <input type="text" class="login__input" id="lnameinp" placeholder="Last Name">
+            </div>
+            <button class="button login__submit">
+              <span class="button__text" id="signup">Sign Up</span>
+              <i class="button__icon fas fa-chevron-right"></i>
+            </button>				
+          </form>
+          <div class="social-login">
+           <a href="signin.html"> <h3>Log In</h3></a>
+            <div class="social-icons">
+              <a href="#" class="social-login__icon fab fa-instagram"></a>
+              <a href="#" class="social-login__icon fab fa-facebook"></a>
+              <a href="#" class="social-login__icon fab fa-twitter"></a>
+            </div>
+          </div>
+        </div>
+        <div class="screen__background">
+          <span class="screen__background__shape screen__background__shape4"></span>
+          <span class="screen__background__shape screen__background__shape3"></span>		
+          <span class="screen__background__shape screen__background__shape2"></span>
+          <span class="screen__background__shape screen__background__shape1"></span>
+        </div>		
+      </div>
+    </div>
+
+    
+      <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+ 
+  import { getDatabase, set, ref } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js";
+  import { getAuth,createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+  
+ 
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyDH7GlwQHOHtszIJpuLg9FRzqii9SfzsbI",
+    authDomain: "authentication-b6d3f.firebaseapp.com",
+    projectId: "authentication-b6d3f",
+    storageBucket: "authentication-b6d3f.appspot.com",
+    messagingSenderId: "474449466152",
+    appId: "1:474449466152:web:b95a7eda8e0d1ef1d7361d",
+    measurementId: "G-RG1DH7THWM"
+  };
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const db = getDatabase();
+const auth = getAuth();
+let lNamneInp = document.getElementById("lnameinp")
+let fNamneInp = document.getElementById("fnameinp")
+let emailinp = document.getElementById('emailinp');
+let passwordinp = document.getElementById('passwordinp')
+let mainform = document.getElementById('mainform')
+let signup = document.getElementById('signup')
+
+let RegisterUser = evt => {
+  evt.preventDefault();
+  createUserWithEmailAndPassword(auth,emailinp.value,passwordinp.value)
+  .then((credentials)=>{
+    console.log(credentials);
+    
+    set(ref(db,'UsersAuthList/' + credentials.user.uid),{
+      firstname: fNamneInp.value,
+      lastname: lNamneInp.value
+    })
+	.then(()=>{
+		signup.innerHTML='Registered!Login'
+
+	})
+  })
+  
+  .catch((error)=>{
+    alert(error.message)
+    console.log(error.code);
+    console.log(error.message);
+  })
+}
+mainform.addEventListener('submit', RegisterUser)
+
+
+</script>
+</body>
+</html>

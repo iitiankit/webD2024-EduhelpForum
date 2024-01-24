@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Materials</title>
+    <link rel="stylesheet" href="project.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=IBM+Plex+Serif:wght@500&family=Roboto:wght@300&family=Ubuntu:wght@500&family=Varela+Round&family=Young+Serif&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="bar">
+        <ul class="list v-class">
+          
+            <li class="row"><a href="home.html">Home</a></li>
+            <li class="row"><a href="About.html">About</a></li>
+            <li class="row"><a href="services.html">Courses</a></li>
+            <li class="row"><a href="doubts.html"> Doubts</a></li>
+            <li class="row"><a href="materials.html">Materials</a></li>
+            <li class="row"><a href="contactus.html">Contact</a></li>
+            <div id="btn2"></div>
+            
+        </ul>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+   
+        <div class="box8">
+        <button class="btn0">Class Notes</button>
+        <button class="btn0">NCERT Solutions</button>
+        <button class="btn0">reference Books</button>
+        <button class="btn0">Study Resources</button>
+        <button class="btn0">State Boards</button>
+        <button class="btn0">Our channels</button>
+        <button class="btn0">Online Test</button>
+    </div>
+    <h6 class="capabilities">
+        We underrstand that every Student <br> has different needs and <br> Capabilities, which is why we <br>create such a wonderful and unique <br>cirriculum that is the best <br>fit for every 
+        student.
+    </h6>
+    <h5 class="know">Know about Us</h5>
+      <h6 class="topp"> We are the India's top Online ed-tech platform that provides affordable and<br> comprehensive learning experience to  engineering students of semester 1 to 8 and those preparing for GATE <br>and CAT exams. We also provide extensive solutions,Sample Papers <br> which makes us a one-stop solution for all resources.</h6>
+      <h5 class="know">We Stand out because</h5>
+      <h6 class="topp"> We are the India's top Online ed-tech platform that provides affordable and<br> comprehensive learning experience to  engineering students of semester 1 to 8 and those preparing for GATE <br>and CAT exams. We also provide extensive solutions,Sample Papers <br> which makes us a one-stop solution for all resources.</h6>
+      <h5 class="know">Our key Focus Areas</h5>
+      <h6 class="topp"> We are the India's top Online ed-tech platform that provides affordable and<br> comprehensive learning experience to  engineering students of semester 1 to 8 and those preparing for GATE <br>and CAT exams. We also provide extensive solutions,Sample Papers <br> which makes us a one-stop solution for all resources.</h6>
+      <h5 class="know">What Makes Us Different</h5>
+      <h6 class="topp"> We are the India's top Online ed-tech platform that provides affordable and<br> comprehensive learning experience to  engineering students of semester 1 to 8 and those preparing for GATE <br>and CAT exams. We also provide extensive solutions,Sample Papers <br> which makes us a one-stop solution for all resources.</h6>
+      <br>
+      <h6 class="privacy"><span id="conditions">Terms and Conditions</span> <span class="line1">|</span>  <span id="policies"> Privacy Policies</span>  <span class="line1" >|</span> <span id="about1"> About Us</span> <span class="line1" >|</span>   <span id="carrier">Careers</span><span  class="line1" >|</span> <span id="uscontact">Contact Us </span>  <span class="line1" >|</span> <span id="blogs1">Blogs</span> </h6>
+      <br>
+        <span>&copy;
+            Copyright all rights reserved</span>
+    </footer>
+   
+    <script>
+        function welcome(){
+            window.open("sem1.html")
+        }
+   
+     
+    burger = document.querySelector('.burger');
+       bar = document.querySelector('.bar');
+       list = document.querySelector('.list');
+
+       burger.addEventListener('click',()=>{
+        list.classList.toggle('v-class')
+        bar.classList.toggle('bar')
+       })
+       let UserCreds = JSON.parse(sessionStorage.getItem("user-cred"));
+       let UserInfo = JSON.parse(sessionStorage.getItem("user-info"));
+
+      let updatename = document.getElementById("btn2")
+      updatename.innerHTML = `Hi ,  ${UserInfo.firstname}`
+
+      const btn2 = document.getElementById("btn2");
+   const container69 = document.getElementById("container69");
+  
+   const phn = document.getElementById('phn')
+
+   btn2.addEventListener('click',()=>{
+    if(container69.style.display=='block'){
+
+        container69.style.display='none';
+        accountbox.style.display = 'none';
+      
+
+    }
+    else{
+        container69.style.display= 'block';
+    }
+   })
+    </script>
+
+</body>
+</html>

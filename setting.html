@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+</head>
+<body>
+    <link rel="stylesheet" href="project.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Acme&family=IBM+Plex+Serif:wght@500&family=Roboto:wght@300&family=Ubuntu:wght@500&family=Varela+Round&family=Young+Serif&display=swap"
+        rel="stylesheet">
+        <style>
+            .accset{
+                margin: 15px 20px;
+                border: 2px solid #5a4bda ;
+                padding: 5px;
+            }
+           
+        </style>
+</head>
+
+<body>
+
+    <div class="bar">
+        <ul class="list v-class">
+          
+            <li class="row"><a href="home.html">Home</a></li>
+            <li class="row"><a href="About.html">About</a></li>
+            <li class="row"><a href="services.html">Courses</a></li>
+            <li class="row"><a href="doubts.html"> Doubts</a></li>
+            <li class="row"><a href="#">Materials</a></li>
+            <li class="row"><a href="contactus.html">Contact</a></li>
+            <div id="btn2"></div>
+             </ul>
+   </div>
+   <br><br><br><br>
+   <div class="conatainer699">
+    <h2>
+       Settings:-
+
+    </h2>
+   
+    <ul>
+         <div class="bigcontain">
+
+    </div>
+       <li class="accset"><button class="acdetails">Account Details</button></li>
+       <li class="accset" ><button onclick="batchdetail()">Batch Details</button></li>
+       <li class="accset"><button>Payment issue</button></li>
+       <li class="accset"><button>Coupons</button></li>
+       <li class="accset"><button>Doubts</button></li>
+       <li class="accset"><button>Ragging issue</button></li>
+       <li class="accset"><button onclick="map()">Campus Map</button></li>
+       <li class="accset"><button>Institute Details</button></li>
+       <li class="accset" ><button onclick="deleteac()">Want to Delete Your account?</button></li>
+       <li class="accset" ><button onclick="signout()">Want to Sign out?</button></li>
+       <li class="accset"><button>More Setting Options</button></li>
+    </ul>
+        </div>
+           
+        <script>
+            function batchdetail(){
+                window.location.href = 'materials.html'
+            }
+            function signout(){
+                window.location.href = 'login.html'
+            }
+            function deleteac(){
+                if(confirm('Do You really Want to delete Your account?')==true){
+                    window.location.href ='login.html'
+                    alert('Please create a new account to login again')
+                }
+                else{
+                    console.log('All Good')
+                }
+            }
+     function map(){
+        window.location.href = 'campus.html';
+     }
+     let acdetails = document.querySelector('acdetais')
+    
+        </script>
+</body>
+</html>
